@@ -7,7 +7,7 @@ interface LogoProps {
 
 export default function Logo(props: LogoProps) {
     return(
-        <Link href='/' className={`flex gap-2 items-center ${props.classname ? props.classname : ''}`}>
+        <Link href='/' className={`flex gap-2 items-center cursor-pointer py-2 ${props.classname ? props.classname : ''}`}>
             <PaletteIcon size={40}/>
             <span>Estudo <strong>TailwindCSS</strong></span>
         </Link>
