@@ -24,3 +24,38 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+
+
+/* Componentes personalizados tailwind */
+
+@layer utilities {
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+}
+
+@utility btn {
+  @apply px-4 py-2 rounded-md transition-all;
+}
+
+@layer components {
+  .btn-info {
+    @apply btn;
+    @apply bg-blue-500; 
+    @apply hover:bg-blue-700 cursor-pointer;
+  }
+  
+  .btn-success {
+    @apply btn;
+    @apply bg-green-500; 
+    @apply hover:bg-green-700 cursor-pointer;
+  }
+  
+  .btn-error {
+    @apply btn;
+    @apply bg-red-500; 
+    @apply hover:bg-red-700 cursor-pointer;
+  }
+}
