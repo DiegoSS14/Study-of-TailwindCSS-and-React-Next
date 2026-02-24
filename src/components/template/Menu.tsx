@@ -6,8 +6,8 @@ import Logo from "./Logo";
 
 export default function Menu() {
     return (
-        <div className="w-72 h-screen flex flex-col bg-zinc-900 p-7 gap-7">
-            <Logo classname="text-zinc-400 bg-zinc-900" />
+        <div className="w-72 h-screen flex flex-col bg-zinc-200 dark:bg-zinc-900 p-7 gap-7">
+            <Logo classname="text-zinc-700 bg-zinc-200 dark:text-zinc-400 dark:bg-zinc-900" />
             <div className="flex-1 flex flex-col w-full gap-7 overflow-y-scroll pb-20">
                 <GroupMenu title="Flex">
                     <MenuItem icon={Activity} title="Box Sizing" link="/flex/boxsizing"></MenuItem>
@@ -31,7 +31,7 @@ export default function Menu() {
             <UserInfo
                 name="Diego Sousa"
                 email="diegosousa@gmail.com"
-                className="fixed bottom-0 left-0 bg-zinc-900 w-72"
+                className="fixed bottom-0 left-0 bg-zinc-200 dark:bg-zinc-900 w-72"
             />
         </div>
     )
